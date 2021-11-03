@@ -1,12 +1,12 @@
 <?php
 	$getal=$_GET["getal"];
-	$a = ($getal==8);
-	$b = ($getal==8);
-	$c = ($getal==8);
-	$d = ($getal==8);
-	$e = ($getal==0) || ($getal==2) || ($getal==6) || ($getal==8);
-	$f = ($getal==8);
-	$g = ($getal==8);
+	$a = !(($getal==1) || ($getal==4)); 
+	$b = ($getal<=4) || ($getal>=7);  
+	$c = ($getal<=1) || ($getal>=3);    
+	$d = !(($getal%3==1));
+	$e = ($getal==0) || ($getal==2) || ($getal==6)  || ($getal==8);
+	$f = !(($getal==1) ||($getal==2) || ($getal==3 || ($getal==7)));   
+	$g = !(($getal==0) ||($getal==1) || ($getal==7)) ; 
 ?>
 
 <form method="get" action="">
